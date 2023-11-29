@@ -8,12 +8,12 @@ html, body {
 .titulo {
   text-align: center;
   background-color: chocolate;
-  padding: 20px;
+  padding: 20px 10px;
   font-size: 25px;
 }
 
 .carta {
-  width: 130px;
+  width: 150px;
   position: relative;
   left: 60px;
   margin-left: -30px;
@@ -22,10 +22,27 @@ html, body {
 }
 
 #bancaCartas, #jugadorCartas {
-  height: 220px;
+  height: 240px;
 }
-h1 {padding: 10px 5px;}
+
+h1 {
+  padding: 10px 5px;
+}
 
 i {
   color: yellow
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 150%;;
+  }
+
+  .carta {
+    width: 30%;
+  }
+
+  #bancaCartas, #jugadorCartas {
+    height: 200px;
+  }
 }

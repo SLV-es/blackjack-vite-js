@@ -48,12 +48,12 @@ const playPlayer = () => {
 
   if (score[player] === 21) {
     scoreHtml[player].innerHTML +=
-      ' <i class="bi bi-emoji-laughing-fill"></i>  HAS GANADO !!!';
+      '<i class="bi bi-emoji-laughing-fill"></i>  HAS GANADO !!!';
     btModoNuevoJuego(true);
   }
   if (score[player] > 21) {
     scoreHtml[player].innerHTML +=
-      ' <i class="bi bi-emoji-frown-fill"></i> HAS PERDIDO !!!';
+      '<i class="bi bi-emoji-frown-fill"></i> HAS PERDIDO !!!';
     playDealer();
   }
 };
@@ -65,11 +65,11 @@ const playDealer = () => {
 
   scoreHtml[player].innerHTML +=
     score[dealer] === score[player]
-      ? ' <i class="bi bi-emoji-smile-upside-down-fill"></i> HEMOS EMPATADO !!!'
+      ? '<i class="bi bi-emoji-smile-upside-down-fill"></i> HEMOS EMPATADO !!!'
       : score[dealer] > 21
-      ? ' <i class="bi bi-emoji-laughing-fill"></i> HAS GANADO !!!'
+      ? '<i class="bi bi-emoji-laughing-fill"></i> HAS GANADO !!!'
       : score[dealer] <= 21 && score[player] < score[dealer]
-      ? ' <i class="bi bi-emoji-frown-fill"></i> HAS PERDIDO !!!'
+      ? '<i class="bi bi-emoji-frown-fill"></i> HAS PERDIDO !!!'
       : '';
 
   btModoNuevoJuego(true);
