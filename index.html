@@ -24,25 +24,20 @@
     <title>Blackjack</title>
   </head>
   <body>
-    <header class="titulo">
-      <div style="width: 40%; float: left">
-        <span class="me-3">Blackjack</span>
-      </div>
-      <div>
-        <button id="btnBarajar" class="btn btn-danger">Nuevo juego</button>
-        <button id="btnPedir" class="btn btn-primary">Pedir carta</button>
-        <button id="btnDetener" class="btn btn-warning">Plantarse</button>
-      </div>
-    </header>
-
-    <div class="row container p-0 m-0">
+    <h1 class="titulo">Blackjack</h1>
+    <div class="buttons">
+      <button id="btnBarajar" class="btn btn-danger">Nuevo juego</button>
+      <button id="btnPedir" class="btn btn-primary">Pedir carta</button>
+      <button id="btnDetener" class="btn btn-warning">Plantarse</button>
+    </div>
+    <div class="row p-0 m-0">
       <div class="col p-0 m-0">
         <h1>Jugador: <span id="jugadorPuntos"></span></h1>
         <div id="jugadorCartas"></div>
       </div>
     </div>
 
-    <div class="row container p-0 m-0">
+    <div class="row p-0 m-0">
       <div class="col p-0 m-0">
         <h1>Banca : <span id="bancaPuntos"></span></h1>
         <div id="bancaCartas"></div>
