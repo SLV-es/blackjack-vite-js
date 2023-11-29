@@ -1,5 +1,6 @@
 export const updateScore = (quien, puntos, puntosHtml, points, cartasHtml, img) => {
   puntos[quien] += points;
-  puntosHtml[quien].innerHTML = puntos[quien] + ' puntos<br/>&nbsp;';
+  const score = puntos[quien] + ' puntos' + (quien===puntos.length-1) ? '' : '<br/>&nbsp;'
+  puntosHtml[quien].innerHTML = score;
   cartasHtml[quien].appendChild(img);
 }
